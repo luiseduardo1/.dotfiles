@@ -4,19 +4,19 @@
 "                        General settings"                                 " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible        " not compatible with the old-fashion vi mode"
-set bs=2                " allow backspacing over everything in insert mode
-set history=50          " keep 50 lines of command line history
-set ruler               " show the cursor position all the time
-set autoread            " auto read when file is changed from outside
+set nocompatible        " Not compatible with the old-fashion vi mode"
+set bs=2                " Allow backspacing over everything in insert mode
+set history=50          " Keep 50 lines of command line history
+set ruler               " Show the cursor position all the time
+set autoread            " Auto read when file is changed from outside
 
-filetype off            " necessary to make ftdetect work on Linux
+filetype off            " Necessary to make ftdetect work on Linux
 syntax on
 filetype on             " Enable filetype detection
 filetype indent on      " Enable filetype-specific indenting
 filetype plugin on      " Enable filetype-specific plugins
 
-"auto reload vimrc when editing it
+" Auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
 syntax on               " syntax highlight
@@ -29,12 +29,12 @@ set hlsearch            " search highlighting
 
 filetype off            " Required by Vundle
 
-"  Set the runtime path to include Vundle and initialize
+" Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()     
 "call vundle#rc()
 
-" let Vundle manage Vundle, required
+" Let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Bundle 'gmarik/vundle'
 
@@ -66,26 +66,26 @@ color molokai               " Set colorscheme
 "                              Vim UI                                      " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set number                          " show line number
-set cursorline                      " highlight current line
+set number                          " Show line number
+set cursorline                      " Highlight current line
 set wildmenu
-set lazyredraw                      " redraw only when we need to.
-set showmatch                       " highlight matching [{()}]
-set foldenable                      " enable folding
-set incsearch                       " search as characters are entered
-set hlsearch                        " highlight matches
-set backspace=indent,eol,start      "Can delete in insertion mode
+set lazyredraw                      " Redraw only when we need to.
+set showmatch                       " Highlight matching [{()}]
+set foldenable                      " Enable folding
+set incsearch                       " Search as characters are entered
+set hlsearch                        " Highlight matches
+set backspace=indent,eol,start      " Can delete in insertion mode
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      Text Formatting/Layout                              " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set autoindent            " auto-indent
-set tabstop=2             " tab spacing
-set softtabstop=2         " unify
-set shiftwidth=2          " indent/outdent by 2 columns
-set expandtab             " use spaces instead of tabs
+set autoindent            " Auto-indent
+set tabstop=2             " Tab spacing
+set softtabstop=2         " Unify
+set shiftwidth=2          " Indent/outdent by 2 columns
+set expandtab             " Use spaces instead of tabs
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
