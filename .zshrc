@@ -86,5 +86,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="mvim -v" # Open mvim in the same window
+alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
