@@ -1,85 +1,96 @@
-"Updated 24/09/26
+"Author:    Luis E. Obando 
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                        General settings"                                 " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" set the runtime path to include Vundle and initialize
+set nocompatible        " not compatible with the old-fashion vi mode"
+set bs=2                " allow backspacing over everything in insert mode
+set history=50          " keep 50 lines of command line history
+set ruler               " show the cursor position all the time
+set autoread            " auto read when file is changed from outside
+
+filetype off            " necessary to make ftdetect work on Linux
+syntax on
+filetype on             " Enable filetype detection
+filetype indent on      " Enable filetype-specific indenting
+filetype plugin on      " Enable filetype-specific plugins
+
+"auto reload vimrc when editing it
+autocmd! bufwritepost .vimrc source ~/.vimrc
+
+syntax on               " syntax highlight
+set hlsearch            " search highlighting
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                      Vundle Bundles + Settings                           " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+filetype off            " Required by Vundle
+
+"  Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()     
 "call vundle#rc()
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Bundle 'gmarik/vundle'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
-" Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
 Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
 Plugin 'user/L9', {'name': 'newL9'}
-" Vim -latex
 Plugin 'lervag/vimtex'
-" DelimitMate plugin that insert auto-completion for quotes,parens,brackets
 Plugin 'raimondi/delimitmate'
 
 " All of your Plugins must be added before the following line
+call vundle#end()            " Required
+filetype plugin indent on    " Required
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
-"color molokai         " awesome colorscheme
-color badwolf
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                           Theme/Colors                                   " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-syntax enable           " enable syntax processing
+set t_Co=256                " Enable 256-color mode
+syntax enable               " Enable syntax highlighting 
+color molokai               " Set colorscheme 
+"colorscheme badwolf        " Set colorscheme
 
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
 
-set expandtab       " tabs are spaces
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                              Vim UI                                      " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set number              " show line numbers
-
-set cursorline          " highlight current line
-
+set number                          " show line number
+set cursorline                      " highlight current line
 set wildmenu
+set lazyredraw                      " redraw only when we need to.
+set showmatch                       " highlight matching [{()}]
+set foldenable                      " enable folding
+set incsearch                       " search as characters are entered
+set hlsearch                        " highlight matches
+set backspace=indent,eol,start      "Can delete in insertion mode
 
-set backspace=indent,eol,start "Can delete in insertion mode
 
-set lazyredraw          " redraw only when we need to.
-set showmatch           " highlight matching [{()}]
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                      Text Formatting/Layout                              " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set foldenable          " enable folding
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
+set autoindent            " auto-indent
+set tabstop=2             " tab spacing
+set softtabstop=2         " unify
+set shiftwidth=2          " indent/outdent by 2 columns
+set expandtab             " use spaces instead of tabs
 
-" -------  Mapping ------------
 
-" Key map to press jj instead of escape key for quitting insert mode
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                             Shortcuts                                    " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 inoremap jj <esc>
 
-filetype plugin indent on
-syntax on
