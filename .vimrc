@@ -1,4 +1,4 @@
-"Author:    Luis E. Obando 
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                        General settings"                                 " 
@@ -93,4 +93,17 @@ set expandtab             " Use spaces instead of tabs
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 inoremap jj <esc>
+
+" To stop using the key arrows in Insert mode "
+inoremap <up> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+inoremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+inoremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+inoremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+
+" To stop using the key arrows in Normal mode "
+noremap <up> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+noremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+noremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
+
 
