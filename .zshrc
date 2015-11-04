@@ -6,7 +6,8 @@ export ZSH=/Users/Eduardo/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="candy"
-
+#ZSH_THEME="random"
+#ZSH_THEME="cobalt2"
 # Virtual environment
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper_lazy.sh
@@ -86,5 +87,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# ==========================================
+# Navigation
+# ==========================================
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../'
+alias ~='cd ~'
+
 alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
+
+# alias for virtualenv
