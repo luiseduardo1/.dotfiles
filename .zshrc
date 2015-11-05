@@ -100,4 +100,14 @@ alias ~='cd ~'
 alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
 
-# alias for virtualenv
+# ==========================================
+# Git
+# ==========================================
+alias gis='git status'
+alias gia='git add -A'
+alias gps='git push'
+alias gpl='git pull'
+
+function gic () {
+    git commit -m"$1"
+}
