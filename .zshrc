@@ -107,7 +107,4 @@ alias gis='git status'
 alias gia='git add -A'
 alias gps='git push'
 alias gpl='git pull'
-
-function gic () {
-    git commit -m"$1"
-}
+alias gcm='git commit -m'
