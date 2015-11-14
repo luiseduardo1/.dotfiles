@@ -61,6 +61,13 @@ plugins=(git brew tmux)
 export PATH="/usr/local/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Perl path
+PATH="/Users/Eduardo/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/Users/Eduardo/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/Eduardo/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/Eduardo/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/Eduardo/perl5"; export PERL_MM_OPT;
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -108,3 +115,4 @@ alias gia='git add -A'
 alias gps='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
+
