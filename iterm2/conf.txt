@@ -1,0 +1,1 @@
+Add tmux attach -t base || tmux new -s base in Profiles -> Command --> Send text at start, to always start tmux when opening a iterm window.
