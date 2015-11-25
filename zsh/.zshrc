@@ -119,4 +119,4 @@ alias gia='git add -A'
 alias gps='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
-
+alias gcn="git clone "
