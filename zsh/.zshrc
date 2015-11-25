@@ -120,3 +120,9 @@ alias gps='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
 alias gcn="git clone "
+
+# ==========================================
+# Alias for the semester
+# ==========================================
+
+alias oaf="open Dropbox/Automne\ 2015"
