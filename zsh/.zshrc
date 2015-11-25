@@ -106,7 +106,11 @@ alias ~='cd ~'
 
 alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
-
+alias tx="tmux -2"
+alias txks="tmux kill-session -t "
+alias txas="tmux attach -t "
+alias txls="tmux ls"
+alias txns="tmux new -s "
 # ==========================================
 # Git
 # ==========================================
