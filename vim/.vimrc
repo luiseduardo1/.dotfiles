@@ -107,4 +107,4 @@ noremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 noremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 
-
+:command Tree :NERDTree  
