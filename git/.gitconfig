@@ -51,3 +51,5 @@
 
   # push
   ps = push
+[push]
+	default = simple

@@ -83,9 +83,9 @@ set backspace=indent,eol,start      " Can delete in insertion mode
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set autoindent            " Auto-indent
-set tabstop=2             " Tab spacing
-set softtabstop=2         " Unify
-set shiftwidth=2          " Indent/outdent by 2 columns
+set tabstop=4            " Tab spacing
+set softtabstop=4         " Unify
+set shiftwidth=4          " Indent/outdent by 2 columns
 set expandtab             " Use spaces instead of tabs
 
 
