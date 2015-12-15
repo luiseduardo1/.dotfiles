@@ -88,6 +88,12 @@ set softtabstop=4         " Unify
 set shiftwidth=4          " Indent/outdent by 2 columns
 set expandtab             " Use spaces instead of tabs
 
+" Create folders
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+set foldnestmax=10      " 10 nested fold max
+nnoremap <space> za     " space open/closes folds
+set foldmethod=indent   " fold based on indent level0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Shortcuts                                    " 
