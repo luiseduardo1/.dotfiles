@@ -114,3 +114,14 @@ noremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 
 :command Tree :NERDTree  
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                             Backups                                      " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup
