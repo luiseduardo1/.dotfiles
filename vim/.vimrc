@@ -32,20 +32,28 @@ filetype off            " Required by Vundle
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()     
-"call vundle#rc()
+" alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
 
-" Let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Bundle 'gmarik/vundle'
+"Let Vundle manage itself
+Plugin 'gmarik/Vundle.vim'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
-Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'file:///home/gmarik/path/to/plugin'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-Plugin 'user/L9', {'name': 'newL9'}
-Plugin 'lervag/vimtex'
-Plugin 'raimondi/delimitmate'
+" start plugin defintion
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/L9'
+Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'itchyny/lightline.vim'      
+Plugin 'Lokaltog/vim-easymotion'    
+Plugin 'tpope/vim-surround'         
+
+" -- Web Development
+Plugin 'Shutnik/jshint2.vim'        
+Plugin 'mattn/emmet-vim'            
+Plugin 'kchmck/vim-coffee-script'   
+Plugin 'groenewege/vim-less'        
+Plugin 'skammer/vim-css-color'      
+Plugin 'hail2u/vim-css3-syntax'     
+Plugin 'digitaltoad/vim-jade'  
 Plugin 'scrooloose/nerdTree'
 
 " All of your Plugins must be added before the following line
