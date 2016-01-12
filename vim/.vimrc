@@ -60,6 +60,17 @@ Plugin 'scrooloose/nerdTree'
 call vundle#end()            " Required
 filetype plugin indent on    " Required
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                         Plugins Settings                                 " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" start NERDTree on start-up and focus active window
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
+" map FuzzyFinder
+noremap <leader>b :FufBuffer<cr>
+noremap <leader>f :FufFile<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                           Theme/Colors                                   " 
