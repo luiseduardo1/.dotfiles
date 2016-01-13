@@ -101,9 +101,11 @@ set backspace=indent,eol,start      " Can delete in insertion mode
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set autoindent            " Auto-indent
+set wrap                 " Wrap lines when longer than the window width
 set tabstop=4            " Tab spacing
 set softtabstop=4         " Unify
-set shiftwidth=4          " Indent/outdent by 2 columns
+set shiftwidth=4          " Indent/outdent by 4 columns
+set shiftround
 set expandtab             " Use spaces instead of tabs
 
 " Create folders
