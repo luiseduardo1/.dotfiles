@@ -3,7 +3,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                        General settings"                                 " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 set nocompatible        " Not compatible with the old-fashion vi mode"
 set bs=2                " Allow backspacing over everything in insert mode
 set history=50          " Keep 50 lines of command line history
@@ -51,7 +50,7 @@ Plugin 'Shutnik/jshint2.vim'
 Plugin 'mattn/emmet-vim'            
 Plugin 'kchmck/vim-coffee-script'   
 Plugin 'groenewege/vim-less'        
-Plugin 'skammer/vim-css-color'      
+"Plugin 'skammer/vim-css-color'      
 Plugin 'hail2u/vim-css3-syntax'     
 Plugin 'digitaltoad/vim-jade'  
 Plugin 'scrooloose/nerdTree'
@@ -132,7 +131,6 @@ noremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 noremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 
-:command Tree :NERDTree  
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
