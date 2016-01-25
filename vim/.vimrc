@@ -1,5 +1,3 @@
-
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                        General settings"                                 " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -44,6 +42,8 @@ Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'itchyny/lightline.vim'      
 Plugin 'Lokaltog/vim-easymotion'    
 Plugin 'tpope/vim-surround'         
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'lervag/vimtex'
 
 " -- Web Development
 Plugin 'Shutnik/jshint2.vim'        
@@ -64,8 +64,8 @@ filetype plugin indent on    " Required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " start NERDTree on start-up and focus active window
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
 
 " map FuzzyFinder
 noremap <leader>b :FufBuffer<cr>
@@ -94,7 +94,7 @@ set foldenable                      " Enable folding
 set incsearch                       " Search as characters are entered
 set hlsearch                        " Highlight matches
 set backspace=indent,eol,start      " Can delete in insertion mode
-
+set mouse=a
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                      Text Formatting/Layout                              " 
@@ -114,6 +114,10 @@ set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
 nnoremap <space> za     " space open/closes folds
 set foldmethod=indent   " fold based on indent level0
+
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Shortcuts                                    " 
@@ -139,8 +143,8 @@ noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 "                             Backups                                      " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set backupskip=/tmp/*,/private/tmp/*
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set writebackup
+"set backup
+"set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+"set backupskip=/tmp/*,/private/tmp/*
+"set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+"set writebackup

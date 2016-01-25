@@ -6,6 +6,7 @@ export ZSH=/Users/Eduardo/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="candy"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="random"
 #ZSH_THEME="cobalt2"
 # Virtual environment
@@ -111,6 +112,8 @@ alias txks="tmux kill-session -t "
 alias txas="tmux attach -t "
 alias txls="tmux ls"
 alias txns="tmux new -s "
+
+alias cl="clear"
 # ==========================================
 # Git
 # ==========================================
@@ -125,4 +128,7 @@ alias gcn="git clone "
 # Alias for the semester
 # ==========================================
 
-alias oaf="open Dropbox/Automne\ 2015"
+alias goweb="cd /Users/Eduardo/Desktop/Hiver/Développement\ web/Laboratoires/TPDevWeb" 
+alias goosc="cd /Users/Eduardo/Desktop/Hiver/Systemes\ d'exploitation" 
+alias gopro="cd /Users/Eduardo/Desktop/Hiver/Introduction\ au\ processus\ GLO/TP/team9"
+alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données"
