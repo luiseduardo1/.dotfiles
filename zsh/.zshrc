@@ -1,3 +1,9 @@
+if [ -n "$INSIDE_EMACS" ]; then
+    export ZSH_THEME="rawsyntax"
+else
+    export ZSH_THEME="robbyrussell"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Eduardo/.oh-my-zsh
 
@@ -114,6 +120,8 @@ alias txls="tmux ls"
 alias txns="tmux new -s "
 
 alias cl="clear"
+alias nv="nvim"
+
 # ==========================================
 # Git
 # ==========================================
@@ -123,6 +131,9 @@ alias gps='git push'
 alias gpl='git pull'
 alias gcm='git commit -m'
 alias gcn="git clone "
+alias gck="git checkout "
+alias glg="git log "
+
 
 # ==========================================
 # Alias for the semester
@@ -132,3 +143,18 @@ alias goweb="cd /Users/Eduardo/Desktop/Hiver/Développement\ web/Laboratoires/TP
 alias goosc="cd /Users/Eduardo/Desktop/Hiver/Systemes\ d'exploitation" 
 alias gopro="cd /Users/Eduardo/Desktop/Hiver/Introduction\ au\ processus\ GLO/TP/team9"
 alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données"
+
+
+# ==========================================
+# Alias for dotfiles 
+# ==========================================
+
+alias dot="cd ~/.dotfiles/"
+alias swp="cd /Users/Eduardo/.local/share/nvim/swap"
+
+# ==========================================
+# Alias for apps
+# ==========================================
+
+alias py="python"
+

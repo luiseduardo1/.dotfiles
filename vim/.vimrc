@@ -42,8 +42,11 @@ Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'itchyny/lightline.vim'      
 Plugin 'Lokaltog/vim-easymotion'    
 Plugin 'tpope/vim-surround'         
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'lervag/vimtex'
+
+" Color theme
+Plugin 'freeo/vim-kalisi'
 
 " -- Web Development
 Plugin 'Shutnik/jshint2.vim'        
@@ -77,7 +80,7 @@ noremap <leader>f :FufFile<cr>
 
 set t_Co=256                " Enable 256-color mode
 syntax enable               " Enable syntax highlighting 
-color molokai               " Set colorscheme 
+"color molokai               " Set colorscheme 
 "colorscheme badwolf        " Set colorscheme
 
 
