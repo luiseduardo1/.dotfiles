@@ -54,6 +54,7 @@ Plugin 'lervag/vimtex'
 
 " Color theme
 Plugin 'junegunn/seoul256.vim'
+Plugin 'zenorocha/dracula-theme'
 
 " -- Web Development
 "Plugin 'Shutnik/jshint2.vim'        
@@ -77,9 +78,10 @@ filetype plugin indent on    " Required
 
 set t_Co=256                " Enable 256-color mode
 syntax enable               " Enable syntax highlighting 
-let g:seoul256_background = 233
-colo seoul256
-set background=dark
+color dracula               " Dracula theme
+"let g:seoul256_background = 233
+"colo seoul256
+"set background=dark
 "color molokai               " Set colorscheme 
 "colorscheme badwolf        " Set colorscheme
 
@@ -134,6 +136,8 @@ nmap <silent> <A-Right> :wincmd l<CR>
 "                             SHORTCUTS                                    " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+:let mapleader = ","
+:nnoremap <leader>er :vsplit $MYVIMRC<cr>      " , + ev --> open nvimrc in a split pane
 inoremap jj <esc>
 
 " To stop using the key arrows in Insert mode "

@@ -149,6 +149,7 @@ alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données"
 # Alias for dotfiles 
 # ==========================================
 
+alias editn="nv ~/.dotfiles/neovim/nvimrc.symlink"
 alias dot="cd ~/.dotfiles/"
 alias swp="cd /Users/Eduardo/.local/share/nvim/swap"
 
