@@ -13,9 +13,6 @@ filetype on             " Enable filetype detection
 filetype indent on      " Enable filetype-specific indenting
 filetype plugin on      " Enable filetype-specific plugins
 
-" Auto reload vimrc when editing it
-autocmd! bufwritepost .vimrc source ~/.vimrc
-
 syntax on               " syntax highlight
 set hlsearch            " search highlighting
 
@@ -36,27 +33,27 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " start plugin defintion
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-scripts/L9'
-Plugin 'vim-scripts/FuzzyFinder'
-Plugin 'itchyny/lightline.vim'      
-Plugin 'Lokaltog/vim-easymotion'    
-Plugin 'tpope/vim-surround'         
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'vim-scripts/L9'
+"Plugin 'vim-scripts/FuzzyFinder'
+"Plugin 'itchyny/lightline.vim'      
+"Plugin 'Lokaltog/vim-easymotion'    
+"Plugin 'tpope/vim-surround'         
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'lervag/vimtex'
 
 " Color theme
-Plugin 'freeo/vim-kalisi'
+Plugin 'junegunn/seoul256.vim'
 
 " -- Web Development
-Plugin 'Shutnik/jshint2.vim'        
-Plugin 'mattn/emmet-vim'            
-Plugin 'kchmck/vim-coffee-script'   
-Plugin 'groenewege/vim-less'        
-"Plugin 'skammer/vim-css-color'      
-Plugin 'hail2u/vim-css3-syntax'     
-Plugin 'digitaltoad/vim-jade'  
-Plugin 'scrooloose/nerdTree'
+"Plugin 'Shutnik/jshint2.vim'        
+"Plugin 'mattn/emmet-vim'            
+"Plugin 'kchmck/vim-coffee-script'   
+"Plugin 'groenewege/vim-less'        
+""Plugin 'skammer/vim-css-color'      
+"Plugin 'hail2u/vim-css3-syntax'     
+"Plugin 'digitaltoad/vim-jade'  
+"Plugin 'scrooloose/nerdTree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " Required
