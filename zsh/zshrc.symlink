@@ -84,7 +84,8 @@ alias gcm='git commit -m'
 alias gcn="git clone "
 alias gck="git checkout "
 alias glg="git log "
-
+alias grh="git reset --hard"
+alias gib="git branch"
 
 # ==========================================
 # Alias for the semester
