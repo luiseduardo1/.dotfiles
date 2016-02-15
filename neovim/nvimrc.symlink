@@ -125,6 +125,9 @@ au WinEnter * set cursorline cursorcolumn
 set cursorline cursorcolumn
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                             TEXT NAVIGATION                             " 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             PANES NAVIGATION                             " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> <A-Up> :wincmd k<CR>
@@ -136,20 +139,14 @@ nmap <silent> <A-Right> :wincmd l<CR>
 "                             SHORTCUTS                                    " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-:let mapleader = ","
-:nnoremap <leader>er :vsplit $MYVIMRC<cr>      " , + ev --> open nvimrc in a split pane
 inoremap jj <esc>
+:let mapleader = ","
+:nnoremap <leader>er :vsplit $MYVIMRC<cr>      " , + ev --> open nvimrc in a split pane inoremap jj <esc> 
 
 " To stop using the key arrows in Insert mode "
 inoremap <up> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
-
-" To stop using the key arrows in Normal mode "
-noremap <up> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
-noremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
-noremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
-noremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 
 

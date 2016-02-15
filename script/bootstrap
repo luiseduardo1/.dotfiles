@@ -6,7 +6,7 @@
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)
 
-set -e
+set -e         # Exit immediately if a command exits with a non-zero status
 
 echo ''
 
