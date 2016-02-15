@@ -1,3 +1,14 @@
+[user]
+	name = Luis E. Obando
+	email = luiseduardo.obando@gmail.com
+
+[core]
+	excludesfile = /Users/Eduardo/.gitignore
+	editor = nvim
+
+[push]
+	default = simple
+
 [color]
 	ui = true
 
@@ -6,18 +17,10 @@
 	smudge = git hawser smudge %f
 	required = true
 
-[user]
-	name = Luis E. Obando
-	email = luiseduardo.obando@gmail.com
-
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
 	required = true
-
-[core]
-	excludesfile = /Users/Eduardo/.gitignore
-	editor = nvim
 
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -26,30 +29,3 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-
-[alias]
-  # add
-  a = add
-  aa = add --all
-  
-  # branch
-  b = branch
-
-  # status
-  s = status
-
-  # commit
-  c = commit -m
-
-  # diff
-  d = diff                    # diff unstaged changes
-  dc = diff --cached          # diff staged changes
-  last = diff HEAD^           # diff last committed change
-
-  # pull
-  pl = pull
-
-  # push
-  ps = push
-[push]
-	default = simple
