@@ -48,7 +48,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'vim-scripts/FuzzyFinder'
 " Plugin 'itchyny/lightline.vim'      
 " Plugin 'Lokaltog/vim-easymotion'    
-" Plugin 'tpope/vim-surround'         
+ Plugin 'tpope/vim-surround'         
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'lervag/vimtex'
 
@@ -91,6 +91,7 @@ color dracula               " Dracula theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set number                          " Show line number
+set relativenumber                  " Show relative line number
 set cursorline                      " Highlight current line
 set wildmenu
 set lazyredraw                      " Redraw only when we need to.
@@ -159,5 +160,4 @@ inoremap <up> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
-
 
