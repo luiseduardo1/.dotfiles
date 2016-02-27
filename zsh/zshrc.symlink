@@ -108,6 +108,7 @@ alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données"
 
 alias editz="nv ~/.dotfiles/zsh/zshrc.symlink"
 alias editn="nv ~/.dotfiles/neovim/nvimrc.symlink"
+alias editt='nv ~/.dotfiles/tmux/tmux.conf.symlink'
 alias dot="cd ~/.dotfiles/"
 alias swp="cd /Users/Eduardo/.local/share/nvim/swap"
 
