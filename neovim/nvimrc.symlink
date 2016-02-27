@@ -78,14 +78,8 @@ filetype plugin indent on    " Required
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set t_Co=256                " Enable 256-color mode
-"syntax enable               " Enable syntax highlighting 
+syntax on
 color dracula               " Dracula theme
-"let g:seoul256_background = 233
-"colo seoul256
-"set background=dark
-"color molokai               " Set colorscheme 
-"colorscheme badwolf        " Set colorscheme
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                              NVIM UI                                     " 
