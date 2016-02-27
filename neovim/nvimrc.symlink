@@ -51,6 +51,7 @@ Plugin 'gmarik/Vundle.vim'
  Plugin 'tpope/vim-surround'         
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'lervag/vimtex'
+Plugin 'wikitopian/hardmode'
 
 " Color theme
 Plugin 'junegunn/seoul256.vim'

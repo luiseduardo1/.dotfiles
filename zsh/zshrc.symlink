@@ -62,6 +62,10 @@ alias ....='cd ../../../'
 alias .....='cd ../../../'
 alias ~='cd ~'
 
+alias dk='cd ~/Desktop'
+alias doc='cd ~/Documents'
+alias dld='cd ~/Downloads'
+
 alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
 alias tx="tmux -2"
@@ -86,6 +90,7 @@ alias gck="git checkout "
 alias glg="git log "
 alias grh="git reset --hard"
 alias gib="git branch"
+alias gff="git diff"
 
 # ==========================================
 # Alias for the semester
