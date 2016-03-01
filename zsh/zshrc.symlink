@@ -56,15 +56,15 @@ source $ZSH/oh-my-zsh.sh
 # ==========================================
 # Navigation
 # ==========================================
-alias ..='cd ..'
-alias ...='cd ../../'
-alias ....='cd ../../../'
-alias .....='cd ../../../'
+alias ..='cd .. && ls'
+alias ...='cd ../../ && ls'
+alias ....='cd ../../../ && ls'
+alias .....='cd ../../../ && ls'
 alias ~='cd ~'
 
-alias dk='cd ~/Desktop'
-alias doc='cd ~/Documents'
-alias dld='cd ~/Downloads'
+alias dk='cd ~/Desktop && ls'
+alias doc='cd ~/Documents && ls'
+alias dld='cd ~/Downloads && ls'
 
 alias mvim="mvim -v" # Open mvim in the same window
 alias tmux="tmux -2" # Open tmux with 256 color bits
@@ -96,10 +96,10 @@ alias gff="git diff"
 # Alias for the semester
 # ==========================================
 
-alias goweb="cd /Users/Eduardo/Desktop/Hiver/Développement\ web/Laboratoires/TPDevWeb" 
-alias goosc="cd /Users/Eduardo/Desktop/Hiver/Systemes\ d'exploitation" 
-alias gopro="cd /Users/Eduardo/Desktop/Hiver/Introduction\ au\ processus\ GLO/TP/team9"
-alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données"
+alias goweb="cd /Users/Eduardo/Desktop/Hiver/Développement\ web/Laboratoires/TPDevWeb && ls" 
+alias goosc="cd /Users/Eduardo/Desktop/Hiver/Systemes\ d'exploitation && ls" 
+alias gopro="cd /Users/Eduardo/Desktop/Hiver/Introduction\ au\ processus\ GLO/TP/team9 && ls"
+alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données && ls"
 
 
 # ==========================================
@@ -179,4 +179,22 @@ alias py="python"
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+
+
+ZSH_SPECTRUM_TEXT=${ZSH_SPECTRUM_TEXT:-Try this color!}
+
+# Show all 256 colors with color number
+function spectrum_ls() {
+  for code in {000..255}; do
+    print -P -- "$code: %{$FG[$code]%}$ZSH_SPECTRUM_TEXT%{$reset_color%}"
+  done
+}
+
+# Show all 256 colors where the background is set to specific color
+function spectrum_bls() {
+  for code in {000..255}; do
+    print -P -- "$code: %{$BG[$code]%}$ZSH_SPECTRUM_TEXT%{$reset_color%}"
+done
+}
+
 
