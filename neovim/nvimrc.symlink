@@ -50,6 +50,8 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'Lokaltog/vim-easymotion'    
  Plugin 'tpope/vim-surround'         
 "Plugin 'Valloric/YouCompleteMe'
+Plugin 'bling/vim-airline'
+Plugin 'tomtom/tcomment_vim'
 Plugin 'lervag/vimtex'
 Plugin 'wikitopian/hardmode'
 
@@ -58,6 +60,8 @@ Plugin 'junegunn/seoul256.vim'
 Plugin 'zenorocha/dracula-theme'
 
 " -- Web Development
+Plugin 'tpope/vim-rails.git'
+Plugin 'vim-ruby/vim-ruby'
 "Plugin 'Shutnik/jshint2.vim'        
 "Plugin 'mattn/emmet-vim'            
 "Plugin 'kchmck/vim-coffee-script'   

@@ -72,3 +72,5 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 alias mvim='mvim -v'
 alias tmux='tmux -2'
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
