@@ -97,10 +97,10 @@ alias gff="git diff"
 # ==========================================
 
 alias goweb="cd /Users/Eduardo/Desktop/Hiver/Développement\ web/Laboratoires/TPDevWeb && ls" 
-alias goosc="cd /Users/Eduardo/Desktop/Hiver/Systemes\ d'exploitation && ls" 
+alias gose="cd /Users/Eduardo/Desktop/Hiver/SystemeExploitation && ls" 
 alias gopro="cd /Users/Eduardo/Desktop/Hiver/Introduction\ au\ processus\ GLO/TP/team9 && ls"
 alias gobd="cd /Users/Eduardo/Desktop/Hiver/Base\ de\ données && ls"
-
+alias dojo="cd /Users/Eduardo/Documents/Programming/Contests/CodingDojo2016 && ls"
 
 # ==========================================
 # Alias for dotfiles 
@@ -198,3 +198,7 @@ done
 }
 
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
