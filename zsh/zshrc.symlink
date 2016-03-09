@@ -202,3 +202,10 @@ done
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+
+# For creating a new session
+tnew_session(){
+    # To avoid 'unset $TMUX to force' error
+    TMUX= tmux new-session -d -s $1
+        tmux attach-session -t $1
+}
