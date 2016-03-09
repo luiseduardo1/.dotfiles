@@ -118,6 +118,14 @@ alias swp="cd /Users/Eduardo/.local/share/nvim/swap"
 
 alias py="python"
 
+# ==========================================
+# Alias for apps
+# ==========================================
+alias txnew='tnew_session'
+alias txls='tmux list-session'
+alias txat='tmux attach -t'
+
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
