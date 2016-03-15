@@ -43,7 +43,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " start plugin defintion
-" Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 " Plugin 'vim-scripts/L9'
 " Plugin 'vim-scripts/FuzzyFinder'
 " Plugin 'itchyny/lightline.vim'      
@@ -54,6 +54,10 @@ Plugin 'bling/vim-airline'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'lervag/vimtex'
 Plugin 'wikitopian/hardmode'
+
+" Git stuff
+
+Plugin 'tpope/vim-fugitive'
 
 " Color theme
 Plugin 'junegunn/seoul256.vim'
@@ -81,6 +85,8 @@ filetype plugin indent on    " Required
 "                           THEME/COLORS                                   " 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 set t_Co=256                " Enable 256-color mode
 syntax on
 color dracula               " Dracula theme
@@ -161,3 +167,4 @@ inoremap <down> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <left> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 inoremap <right> <C-o>:echoe "Don't use the arrows keys noob!"<CR>
 
+let g:python_host_prog = '/usr/bin/python'

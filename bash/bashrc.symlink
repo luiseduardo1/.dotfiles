@@ -74,3 +74,6 @@ alias mvim='mvim -v'
 alias tmux='tmux -2'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# added by travis gem
+[ -f /Users/Eduardo/.travis/travis.sh ] && source /Users/Eduardo/.travis/travis.sh
