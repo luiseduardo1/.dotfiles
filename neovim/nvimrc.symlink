@@ -49,7 +49,7 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'itchyny/lightline.vim'      
 " Plugin 'Lokaltog/vim-easymotion'    
  Plugin 'tpope/vim-surround'         
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'lervag/vimtex'
@@ -79,7 +79,8 @@ Plugin 'vim-ruby/vim-ruby'
 call vundle#end()            " Required
 filetype plugin indent on    " Required
 
-
+let g:ycm_global_ycm_extra_conf = '~/ycm_extra_conf.py'  "where to search for .ycm_extra_conf.py if not found
+let g:ycm_confirm_extra_conf = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                           THEME/COLORS                                   " 

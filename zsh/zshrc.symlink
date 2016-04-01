@@ -91,6 +91,7 @@ alias glg="git log "
 alias grh="git reset --hard"
 alias gib="git branch"
 alias gff="git diff"
+alias gball="git branch --all"
 
 # ==========================================
 # Alias for the semester

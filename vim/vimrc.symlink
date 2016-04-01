@@ -31,6 +31,8 @@ set hlsearch            " search highlighting
 
 filetype off            " Required by Vundle
 
+let g:python_host_prog = '/usr/bin/python'
+
 " Set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()     
